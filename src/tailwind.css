@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Alergreya";
+        src: url(/src/font/AlegreyaSC-Bold.otf);
+    }
+
+    body {
+        @apply font-Alergreya;
+    }
+}
+
+
+
+@layer components {
+
+
+    .input-group {
+        background-color: white;
+        border-radius: 40px;
+        height: 63px;
+        padding: 3px 15px;
+        display: flex;
+        width: 59%;
+    }
+
+    .form-control-1 {
+        width: 152px;
+        margin-left: 39%;
+
+        color: white;
+        font-size: 16px;
+        height: 49px;
+        border-radius: 27px;
+        border: none;
+        transition: all 0.3s;
+        margin-top: 5px;
+        background-color: #200E00;
+    }
+
+
+    .banner {
+        background:
+            /* top, transparent black, faked with gradient */
+            linear-gradient(rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+            /* bottom, image */
+            url('img/Rectangle\ 19.png');
+
+
+        background-size: cover;
+
+        min-height: 500px;
+    }
+
+    .star {
+        @apply w-[20px] h-[20px];
+    }
+
+    header {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    .btn {
+        @apply text-[white] bg-brown;
+
+    }
+
+    a {
+        @apply cursor-pointer;
+
+    }
+
+    span {
+        @apply text-brown;
+
+    }
+
+    p {
+        @apply font-[400];
+
+    }
+
+
+    h3 {
+        @apply text-brown;
+
+    }
+
+    .box {
+
+        border: 2px solid #200E00;
+        border-radius: 42px;
+    }
+
+}

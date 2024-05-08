@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .banner {
+        background:
+            /* top, transparent black, faked with gradient */
+            linear-gradient(rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+            /* bottom, image */
+            url('img/Rectangle\ 19.png');
+
+
+        background-size: cover;
+
+        min-height: 500px;
+    }
+</style>
+
+<body>
+    <div class="w-[100%]  bg-white">
+        <header class="h-[70px] bg-white w-full">
+            <nav class="flex flex-row items-center w-full h-[68px] shadow-[1px_gray]">
+                <div class="w-1/2 log">
+                    <img class="w-[316px] h-[25.8px] pl-[21%]" src="img/Group.png" alt="">
+                </div>
+                <div class="lg:flex lg:flex-row lg:w-1/2 lg:block md:hidden sm:hidden">
+                    <div class="w-2/3">
+                        <ul class="flex flex-row gap-10">
+                            <li class="text-[20px]"><a>About us</a> </li>
+                            <li class="text-[20px]"> <a>Products</a></li>
+                            <li class="text-[20px]"><a>Services</a> </li>
+                            <li class="text-[20px]"> <a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3">
+                        <button
+                            class="w-[160px] btn h-[40px] bg-brown  rounded-[50px] hover:border-[1px_solid_#200E00] hover:text-[#200E00] hover:bg-white">
+                            sign up/sign in</button>
+                    </div>
+
+                </div>
+                <span class="pl-[38%] float-right text-black  lg:hidden sm:block md:block" onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                        </path>
+                    </svg>
+
+                </span>
+
+            </nav>
+
+
+            <div id="mySidenav" class="sidenav    fixed
+            overflow-x-hidden
+            w-[315px]
+            h-[100%]
+            bg-white
+            z-10
+            pl-[5%]
+            top-[0px]
+            left-[0px]
+            right-[0px] 
+             pt-[1.25rem] lg:hidden md:hidden sm:hidden">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div style="padding-bottom: 33px;">
+                    <a class="navbar-brand" href="index.html"> <img src="img/Group.png" alt="logo">
+
+                    </a>
+                </div>
+                <div class="w-2/3">
+                    <ul class="flex flex-col gap-10">
+                        <li><a>About us</a> </li>
+                        <li> <a>Products</a></li>
+                        <li><a>Services</a> </li>
+                        <li> <a>Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="slimScrollDiv"
+                    style="position: relative; overflow: hidden; width: auto; height: 959.875px;">
+                    <div class="aside-scroll" style="overflow: hidden; width: auto; height: 959.875px;">
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="main">
+
+            </div>
+        </header>
+        <div class="w-[90%] h-auto pl-[10%] pt-[4%] ">
+            <div class=" w-full  bg-[#A58A71] rounded-[40px]  flex flex-row">
+
+                <div class="flex flex-col w-2/3 pl-[4%] pt-[1%] pb-[3%]">
+                    <div>
+                        <h2 class="text-[80px] text-[white] font-[700]"> Welcome <span>to</span> our
+                            <span>Coffee</span>
+                            Shop!
+                        </h2>
+
+                    </div>
+                    <div>
+                        <p class="pr-[39%] text-[26px] text-[white]"> Indulge in the rich aroma and flavors of our
+                            handcrafted
+                            coffees.
+                        </p>
+
+                    </div>
+                    <div class="pt-[5%]">
+                        <button
+                            class="btn w-[100px] rounded-[50px] h-[28px] hover:border-[1px_solid_#200E00] hover:text-white hover:bg-[#A58A71] hover:text-[#200E00] ">Export</button>
+                        <a href="#" class="text-[white] pl-[3%] hover:text-[#200E00]">Learn More</a>
+                    </div>
+                </div>
+                <div class="relative w-1/3 ">
+                    <img class="absolute top-[8%] right-[10%]"
+                        src="img/5-52393_coffee-cup-png-hd-coffee-to-go-png 1.png" alt="">
+                </div>
+            </div>
+            <div
+                class="flex lg:pl-[2%] justify-center pt-[20%] w-full lg:flex-row md:flex-col sm:flex-col  md:pl-[10%] sm:pl-[10%]">
+                <div class="lg:w-1/2 md:w-full sm:w-full ">
+                    <h3 class="text-[39px] font-[500]">Experience the rich flavors of our special blend, crafted with
+                        care.</h3>
+                    <p class="text-[#444444] text-[14px]">
+                        Experience the rich flavors of our special blend, crafted with care.At our coffee shop,we take
+                        pride
+                        in sourcing only the finest organic coffee beans, ensuring a truly exceptional cup of coffee
+                        every
+                        time.</p>
+                </div>
+                <div class="lg:w-1/2 md:w-full sm:w-full pl-[10%]">
+                    <img src="img/Rectangle 5.jpg" alt="" class="w-[350px] ">
+                </div>
+
+            </div>
+            <div
+                class="flex lg:pl-[2%] justify-center pt-[10%] w-full lg:flex-row md:flex-col sm:flex-col  md:pl-[10%] sm:pl-[10%]">
+                <div class=" lg:w-1/2 md:w-full sm:w-full">
+                    <img src="img/Rectangle 6.png" alt="" class="w-4/5">
+                </div>
+                <div class="flex flex-col lg:w-1/2 md:w-full sm:w-full justify-center gap-[10%]">
+                    <div class="pr-[10%] pl-[5%]" style="    border-left: 6px solid   rgba(36 32 27);
+                        ">
+                        <h3 class="text-[34px] font-[600]">Discover Our Features</h3>
+                        <p class="text-[16px]">Enjoy free Wi-Fi, a cozy ambiance, and exclusive loyalty program
+                            benefits.</p>
+                    </div>
+
+                    <div class="pr-[11%]">
+                        <h3 class="text-[36px] font-[600]">Cozy Ambiance</h3>
+                        <p class="text-[16px]">Relax and unwind in our warm and inviting atmosphere, perfect for
+                            catching up with friends or
+                            enjoying a quiet moment alone.</p>
+                    </div>
+                    <div class="pr-[12%]">
+                        <h3 class="text-[34px] font-[600]">Loyalty Program</h3>
+                        <p class="text-[16px]">Join our loyalty program and enjoy exclusive perks, discounts, and
+                            special offers tailored
+                            just
+                            for you</p>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="flex lg:pl-[2%] justify-center  w-full lg:flex-row md:flex-col sm:flex-col pt-[10%] md:pl-[10%] sm:pl-[10%]">
+                <div class=" lg:w-1/2 md:w-full sm:w-full">
+                    <span>Delicious</span>
+                    <h3 class="text-[40px] font-[700]">Experience the Rich and Flavorful Coffee</h3>
+                </div>
+                <div class="lg:w-1/2 md:w-full sm:w-full">
+                    <p class="pb-[6%] text-[16px]">At our coffee shop, we take pride in serving the highest quality
+                        coffee that is
+                        not
+                        only
+                        delicious but also carefully crafted to perfection. Our expert baristas ensure that every cup of
+                        coffee delivers a rich and flavorful experience. From the first sip to the last, you'll savor
+                        the exceptional taste and aroma that sets our coffee apart.</p>
+                    <a href="#" style="   border: 1px solid #200E00;  "
+                        class="rounded-[49px] hover:bg-[#200E00] hover:text-white px-[5%] py-[7px]">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="w-full pt-[10%]">
+                <img src="img/Rectangle 9.png" alt="">
+            </div>
+            <div class="flex flex-col pt-[10%]">
+                <div class="flex flex-col items-center justify-center">
+                    <span class="text-[20px]">Delicious</span>
+                    <h3 class="text-[45px] font-[700]">Discover Our Coffee Services</h3>
+                    <p class="text-[14px]">Explore our additional services for coffee lovers.</p>
+                </div>
+                <div class="grid h-auto lg:grid-cols-4 md:grid-cols-2 gap-[3%] pt-[4%]">
+                    <div class="flex col-span-2 box">
+                        <div class="w-1/2 flex flex-col pl-[7%] pb-[10%] pt-[7%] gap-[11px] ">
+                            <span>Convenient</span>
+                            <h3 class="text-[25px] font-[700]">Coffee Subscriptions Made Easy</h3>
+                            <p>Choose from our selection of coffee subscriptions.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="w-1/2 pl-[12%] pt-[2%] pb-[2%]">
+                            <img src="img/Rectangle 13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-1 box">
+                        <div class="pl-[7%] pt-[7%]">
+                            <span>Convenient</span>
+                            <h3 class="text-[24px] font-[700]">Event Catering Services</h3>
+                            <p class="text-[12px] pr-[13%]">Make your next event unforgettable with our catering
+                                services.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="pt-[7%]">
+                            <img src="img/Rectangle 15.png" alt="" class="pt-[1%]">
+                        </div>
+                    </div>
+                    <div class="col-span-1 box">
+                        <div class="pl-[7%] pt-[7%]">
+                            <span>Quality</span>
+                            <h3 class="text-[25px] font-[700]">Premium Coffee Beans</h3>
+                            <p class="text-[12px] pr-[13%]">Experience the rich flavors of our premium coffee beans.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="pt-[7%]">
+                            <img src="img/Rectangle 17.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex lg:pl-[2%] justify-center  w-full lg:flex-row md:flex-col sm:flex-col pt-[10%] md:pl-[10%] sm:pl-[10%]">
+                <div class=" lg:w-1/2 md:w-full sm:w-full pr-[5%]">
+
+                    <h3 class="text-[36px] font-[700]">Discover the Impressive Stats of Our Coffee Shop</h3>
+                </div>
+                <div class="lg:w-1/2 md:w-full sm:w-full pl-[33px]">
+                    <div>
+                        <p class="text-[17px] ">From the number of cups sold to the variety of coffee beans on offer,
+                            our coffee shop boasts
+                            impressive statistics that showcase our commitment to quality and variety.</p>
+                    </div>
+                    <div class="flex flex-row">
+                        <div>
+                            <span class="text-[55px]  font-700">50%</span>
+                            <p>Cups Sold: 10,000+ | Coffee Bean Varieties: 20+</p>
+                        </div>
+                        <div>
+                            <span class="text-[55px]  font-700">50%</span>
+                            <p>Customer Satisfaction: 95%+ | Awards Won: 10+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[4%]">
+                <img src="img/Rectangle 18.png" alt="">
+            </div>
+            <div>
+                <div class="pt-[4%] pl-[1%] pb-[2%]">
+
+                    <h2 class="text-[#200E00] font-[700] text-[45px] h-[88px] ">Happy Customers</h2>
+                    <p>Read what our satisfied customers have to say.</p>
+                </div>
+                <div class="grid h-auto lg:grid-cols-3 md:grid-cols-2 gap-[3%] pt-[4%]">
+                    <div class="col-span-1 box pl-[9%] pt-[12%] pb-[43px]">
+                        <div class="flex flex-row">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 5.png" alt="" class="star">
+                        </div>
+                        <div style="padding-top: 6%;
+                        padding-right: 29%;">
+                            <p style="
+                            font-size: 14px;
+                        ">Our experience with Website Coffee has been amazing!</p>
+                        </div>
+                        <div class="pt-[5%]">
+                            <img src="img/Ellipse 1.png" alt="">
+                            <div class="flex flex-col pt-[3%]">
+                                <span class="text-[13px]">John Doe</span>
+                                <span class="text-[13px]">CEO, Coffee Co.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-span-1 box pl-[9%] pt-[12%] pb-[43px]">
+                        <div class="flex flex-row">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                        </div>
+                        <div style="padding-top: 6%;
+                        padding-right: 27%;">
+                            <p style="
+                            font-size: 14px;
+                        ">Website Coffee transformed our online presence!</p>
+                        </div>
+                        <div class="pt-[5%]">
+                            <img src="img/Ellipse1 1.png" alt="">
+                            <div class="flex flex-col pt-[3%]">
+                                <span class="text-[13px]">Angelita Mardiros</span>
+                                <span class="text-[13px]">Marketing Manager, Coffee Co.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-span-1 box pl-[9%] pt-[12%] pb-[43px]">
+                        <div class="flex flex-row">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 2.png" alt="" class="star">
+                            <img src="img/Star 5.png" alt="" class="star">
+                            <img src="img/Star 5.png" alt="" class="star">
+                        </div>
+                        <div style="padding-top: 6%;
+                        padding-right: 29%;">
+                            <p style="
+                            font-size: 14px;
+                        ">Our experience with Website Coffee has been amazing!</p>
+                        </div>
+                        <div class="pt-[5%]">
+                            <img src="img/Ellipse 1 (1).png" alt="">
+                            <div class="flex flex-col pt-[3%]">
+                                <span class="text-[13px]">Jane Smith</span>
+                                <span class="text-[13px]">CEO, Coffee Co.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[6%] flex flex-col items-center pb-[8%]">
+                <div>
+                    <h2 class="text-amber-950 font-[700] text-[38px] h-[88px]">Delicious Coffee for Every Taste</h2>
+                    <p class="pl-[24%]">Read what our satisfied customers have to say.</p>
+                </div>
+                <div class="pt-[2%]">
+                    <button
+                        class="text-white btn w-[100px] h-[28px] rounded-[50px] hover:text-[#200E00]  hover:bg-white hover:border-[1px_solid_#200E00]">visit</button>
+                    <button class="rounded-[49px]  w-[100px] h-[28px]  hover:bg-[#200E00] hover:text-white  " style="border: 1px solid #200E00;   
+                 
+                ">Order</button>
+
+                </div>
+            </div>
+            <div class="banner pt-[4%] pl-[5%]">
+                <div class="pb-[2%] pt-[3%]">
+                    <h2 class="text-[53px] pr-[43%] font-[700] text-[white]">Stay Informed with Our Newsletter</h2>
+                    <p style="    color: white;
+                    font-size: 21px;">Subscribe to our newsletter to receive the latest news and special offers.</p>
+                </div>
+                <div class=" input-group">
+
+                    <input style="    border-radius: inherit;" type="email" class="email-input " name="email" id="email"
+                        pattern="[^ @]*@[^ @]*" placeholder="Enter email address" required="">
+
+                    <button type="submit"
+                        class="form-control-1   hover:text-[#200E00] hover:bg-white hover:border-[1px_solid_#200E00] ">Join
+                        Now</button>
+                </div>
+                <div>
+                    <p class="text-[white] pt-[1%] text-[20px]">By joining, you agree to our Terms and Conditions.</p>
+                </div>
+            </div>
+            <div class="flex flex-row pt-[8%] pl-[3%] pr-[3%] pb-[8%]">
+
+                <div class="flex flex-col w-1/3 gap-[6%]">
+                    <div class="flex flex-col">
+                        <div><img src="img/Mail outline (1).png" alt=""></div>
+                        <span>Email</span>
+                        <span>Send us an email</span>
+                        <a href="#">hello@relume.io</a>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>Phone</span>
+                        <span>Give us a call</span>
+                        <span>+1 (555) 000-0000</span>
+
+                    </div>
+                    <div class="flex flex-col">
+                        <div><img src="img/Location on.png" alt=""></div>
+                        <span>Office</span>
+                        <span>123 Sample St, Sydney NSW 2000 AU</span>
+
+                    </div>
+                    <div>
+                        <a href="#">Get Directions</a>
+                    </div>
+                </div>
+                <div class="w-2/3">
+                    <img src="img/Rectangle 23.png" alt="">
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="bg-[#C4C5C5]">
+            <div class="pt-[4%]">
+                <div class="flex flex-row gap-[10%] pl-[11%] pb-[2%]">
+                    <div class="w-[10%]">
+                        <img src="img/Group.png" alt="">
+                    </div>
+                    <div class="pl-[6%] w-[42%]">
+                        <ul class="flex flex-row gap-10">
+                            <li class="text-[16px]"><a>About us</a> </li>
+                            <li class="text-[16px]"> <a>Products</a></li>
+                            <li class="text-[16px]"><a>Services</a> </li>
+                            <li class="text-[16px]"> <a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-row ">
+                        <img src="img/LinkedIn.png" alt="" class="w-[32px] h-[32px]">
+                        <img src="img/Instagram.png" alt="" class="w-[32px] h-[32px]">
+                        <img src="img/Facebook.png" alt="" class="w-[32px] h-[32px]">
+                        <img src="img/TwitterX.png" alt="" class="w-[32px] h-[32px]">
+                        <img src="img/YouTube.png" alt="" class="w-[32px] h-[32px]">
+                    </div>
+                </div>
+                <div class="w-[80%] h-[1px] bg-[black] mb-[3%] ml-[8%]"></div>
+                <div class="pb-[2%] flex flex-row items-center justify-center">
+                    <span class="text-[13px] pr-[1%]">© 2024 Relume. All rights reserved.</span>
+                    <ul class="flex gap-[24px]">
+                        <li class="text-[13px]"> <a href="#">Privacy Policy</a></li>
+                        <li class="text-[13px]"> <a href="#">Terms and Conditions</a></li>
+                        <li class="text-[13px]"><a href="#"> Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+<script src="index.js">
+
+</script>
+
+</html>
